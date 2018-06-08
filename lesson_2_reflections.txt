@@ -17,3 +17,15 @@ staging groups files into logical packages of commit.
 enables flexibility in creating commits, don't have to include all files.
 command(s):
 git reset fileName (removes file from stage, still in working directory though)
+
+reflection prompt:
+How can you use the staging area to make sure you have one commit per logical change?
+reflection response:
+If multiple files changed, can be grouped in stage to be committed as a set.
+Can commit single files at a time.
+command(s):
+git add fileName (adds file to stage)
+git commit (commits all changes in stage to repo)
+git commit -m "commit message" (inline commit message)
+git diff (no argumenst, compares working directory with staging area)
+git diff --staged (compares stage with repo)
