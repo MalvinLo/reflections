@@ -29,3 +29,17 @@ git commit (commits all changes in stage to repo)
 git commit -m "commit message" (inline commit message)
 git diff (no argumenst, compares working directory with staging area)
 git diff --staged (compares stage with repo)
+
+reflection prompt:
+What are some situations when branches would be helpful in keeping your history organized?
+How would branches help?
+reflection response:
+Creating experimental new features, experimental versions, while preserving main version
+functionality.
+Can branch off, experiment, and merge later if the experiment turns out well.
+Able to use human-readable labels too.
+Can have multiple people working on multiple features to merge later.
+command(s):
+git branch (lists branches in commit history)
+git branch newBranchName (creates new branch)
+
