@@ -1,0 +1,83 @@
+reflection prompt: 
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+reflection response:
+Omits all lines that were not changed.
+This could save a lot of time in a file with many lines.
+Stars specific lines to highlight change and possible bug.
+This requires recognizing there is a bug first though.
+Must recognize, then go back and find, now we have a tool to find.
+command(s):
+diff -u (-u for improved readabilitiy)
+
+reflection prompt:
+How could having easy access to the entire history of a file make you a more 
+efficient programmer in the long term?
+reflection response:
+can learn from viewing development of code, tracing thought process
+can revert if I change my mind on a development path
+command(s):
+n/a
+
+reflection prompt:
+What do you think are the pros and cons of manually choosing when to create a commit, 
+like you do in Git, vs having versions automatically saved, like Google Docs does?
+reflection response:
+pro - preserve functionality so a change doesn't brake code (saving mid line)
+pro - clutter control of versions
+pro - create own logical development path
+con - subjective
+con - can forget
+command(s):
+git log
+git diff hashOfCommit2 hashofCommit2 (compares between commits)
+
+reflection prompt:
+Why do you think some version control systems, like Git, allow saving multiple 
+files in one commit, while others, like Google Docs, treat each file separately?
+reflection response:
+code files are interelated, moreoftenso then a document
+changing a function name in one file, could require changing calls in other files
+documents are typically more independant from each other than code
+command(s)
+git log --stat
+
+reflection prompt:
+How can you use the commands git log and git diff to view the history of files?
+reflection response:
+git log to see change messages on commits
+git log to see commit ids
+git diff to compare lines of code in commits
+command(s):
+n/a
+
+reflection prompt:
+How might using version control make you more confident to make changes that 
+could break something?
+reflection response:
+knowing a previous version is saved means I can revert back to pre-break
+comparison tools help to identify and isolate break cause as well
+command(s):
+git checkout hashofCommit
+
+reflection prompt:
+Now that you have your workspace set up, what do you want to try using Git for?
+reflection repsonse:
+manage development of first cordapp
+use checkout to explore projects
+commands(s):
+n/a
+
+summary of commands
+git clone url - copies repository, files and histories
+git log -- stat - states history of commits and change summaries
+git diff commitHash1 commitHash2 - compares two commits
+git checkout - changes repo to previous version temporarily
+
+sumamry of topics
+git can help investigate bugs, checkout pre-bug versions,
+identify when bug introduced, compare using diff to isolate.
+each commit saves an entire copy of the previous state of repo,
+can track changes to multiple files simultaneously,
+useful for interalted files, unlock regular documents
+feel free to checkout old versions, break it, and revert.
