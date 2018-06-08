@@ -51,3 +51,14 @@ can trace reachability and find unreachable commits.
 command(s):
 git checkout -b newBranchName (creates a new branch off of current head)
 git log --graph --oneline branch1 branch2 (lists relative commit positions between branches)
+
+reflection prompt:
+What is the result of merging two branches together? Why do we represent it in the
+diagram the way we do?
+reflection response:
+a single branch with combined changes of both branches
+shows project segmentation and reformation
+command(s):
+git show commitID (shows diff between commit and its parent)
+git merge branch1 branch2 (merges two branches)
+git branch -d branchName (deletes branch name)
