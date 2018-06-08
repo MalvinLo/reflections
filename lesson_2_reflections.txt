@@ -1,0 +1,19 @@
+reflection prompt:
+What happens when you initialize a repository? Why do you need to do it?
+reflection response:
+turns a directory into a git repository
+adds .git hidden folder
+command(s):
+ls -a
+git init
+git status
+
+reflection prompt:
+How is the staging area different from the working directory and the repository? 
+What value do you think it offers?
+reflection response:
+working directory contains all files, repository tracks history of files, while
+staging groups files into logical packages of commit.
+enables flexibility in creating commits, don't have to include all files.
+command(s):
+git reset fileName (removes file from stage, still in working directory though)
