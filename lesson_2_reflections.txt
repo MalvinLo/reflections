@@ -43,3 +43,11 @@ command(s):
 git branch (lists branches in commit history)
 git branch newBranchName (creates new branch)
 
+reflection prompt:
+How do the diagrams help you visualize the branch structures?
+reflection response:
+see non-linear positions of commits and branches relative to each other
+can trace reachability and find unreachable commits.
+command(s):
+git checkout -b newBranchName (creates a new branch off of current head)
+git log --graph --oneline branch1 branch2 (lists relative commit positions between branches)
