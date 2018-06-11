@@ -1,0 +1,11 @@
+reflection prompt:
+When would you want to use a remote repository rather than keeping all your work local?
+refleciton response:
+collaborating with multiple people
+switching computers
+when backup is warranted
+command(s):
+git remote
+git remote add remoteName aURL
+git remote -v (verbose, for more detailed list of remotes)
+git push remote localBranch
