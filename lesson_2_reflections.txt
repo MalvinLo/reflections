@@ -57,8 +57,17 @@ What is the result of merging two branches together? Why do we represent it in t
 diagram the way we do?
 reflection response:
 a single branch with combined changes of both branches
-shows project segmentation and reformation
+shows project segmentation and reformationf
 command(s):
 git show commitID (shows diff between commit and its parent)
 git merge branch1 branch2 (merges two branches)
 git branch -d branchName (deletes branch name)
+
+reflection prompt:
+What are the pros and cons of Git's automatic merging vs. always
+doing merges manually?
+reflection response:
+pro: highlights where in code there is conflict
+pro: brings conflict into single file, simplify resolving
+cons: accidental merges from inexperienced
+command(s):
