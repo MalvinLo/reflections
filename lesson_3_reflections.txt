@@ -9,3 +9,11 @@ git remote
 git remote add remoteName aURL
 git remote -v (verbose, for more detailed list of remotes)
 git push remote localBranch
+
+reflection prompt:
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+relfection response:
+auto sync on collaborative projects could break local code if not managed
+command(s):
+git pull remoteName remoteBranch
