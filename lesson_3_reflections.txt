@@ -17,3 +17,13 @@ relfection response:
 auto sync on collaborative projects could break local code if not managed
 command(s):
 git pull remoteName remoteBranch
+
+reflection prompt:
+Describe the differences between forks, clones, and branches. 
+When would you use one instead of another?
+reflection response:
+branches, compartmentalized change paths that eventually merge or discarded
+clones, copies of reposititory, history included, local or remote
+fork, a clone of a repository on GitHub
+command(s):
+NA
