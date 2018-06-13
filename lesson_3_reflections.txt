@@ -27,3 +27,16 @@ clones, copies of reposititory, history included, local or remote
 fork, a clone of a repository on GitHub
 command(s):
 NA
+
+reflection prompt:
+What is the benefit of having a copy of the last known state of the 
+remote stored locally?
+reflection response:
+git stores files, histories, and last known state of the remote
+having local copy of last known states helps you compare changes
+of others with yours, while working offline
+command(s):
+git fetch (updates last known state of the remote)
+git fetch + git merge = git pull
+
+
