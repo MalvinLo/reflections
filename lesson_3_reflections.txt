@@ -39,4 +39,15 @@ command(s):
 git fetch (updates last known state of the remote)
 git fetch + git merge = git pull
 
-
+reflection prompt:
+How would you collaborate without using Git or GitHub? 
+What would be easier, and what would be harder?
+reflection response:
+manually compare changes periodically
+fragment code, require only one person touch each section
+can begin coding right away
+as project gets complex, collaboration becomes more difficult
+using Git requires initial learning curve
+pays off as projects develop in complexity
+command(s):
+GitHub pull request
