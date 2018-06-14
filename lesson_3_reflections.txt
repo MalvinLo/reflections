@@ -51,3 +51,20 @@ using Git requires initial learning curve
 pays off as projects develop in complexity
 command(s):
 GitHub pull request
+
+reflection prompt:
+Making changes in seperate branch workflow
+More complex than working directly on master
+Can't just push pull
+Have to 
+-pull remote master changes into local master
+-merge local master into branch
+-push branch to remote
+-finally merge branch into master
+When would you want to make changes in a separate branch rather 
+than directly in master? What benefits does each approach have?
+reflection response:
+when master is in production
+allows experimental features while preserving functionality of master
+command(s):
+NA
